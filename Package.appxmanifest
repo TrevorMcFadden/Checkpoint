@@ -35,7 +35,7 @@
         DisplayName="Checkpoint"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Checkpoint is a simple to-do list built in HTML."
+        Description="Checkpoint is an open-source to-do list developed for the Universal Windows Platform (UWP) and written mostly in HTML."
         BackgroundColor="white">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Checkpoint" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png">
           <uap:ShowNameOnTiles>
