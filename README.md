@@ -7,6 +7,7 @@ Do you ever feel stressed, like you have so much on your plate? Try Checkpoint. 
 <br>
 <br>
 Features:
+- Checkpoint allows you to create a variety of different tasks and items.
 - Checkpoint is mainly HTML-based, thus allowing a look at how HTML and UWP's WebView interact.
 <br>
 Developed by <a href="https://www.trevormcfadden.com">Trevor McFadden</a> (Christian/Artist/Software Developer)
