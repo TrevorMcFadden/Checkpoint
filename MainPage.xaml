@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="CheckpointGrid">
-        <WebView x:Name="Navi" Source="ms-appx-web:///file/Checkpoint.html"/>
+        <WebView x:Name="Navi" Source="ms-appx-web:///files/Checkpoint.html"/>
         <CommandBar x:Name="CheckpointCommandBar" DefaultLabelPosition="Right" ClosedDisplayMode="Compact" VerticalAlignment="Bottom">
             <CommandBar.Content>
                 <Grid/>
