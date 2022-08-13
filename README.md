@@ -1,6 +1,4 @@
 # Checkpoint
-Checkpoint is an open-source to-do list developed for the Universal Windows Platform (UWP) and written mostly in HTML.
-
 <b>"The wisdom of the prudent is to think about his way, but the folly of fools is deceit" (Proverbs 14:8, WEB).</b>
 <br>
 Do you ever feel that to-do lists these days are overly-complicated? Have you ever wished for a more simplier, easier to-do list? Try Checkpoint. Checkpoint is an open-source to-do list developed for the Universal Windows Platform (UWP) and written mostly in HTML.
