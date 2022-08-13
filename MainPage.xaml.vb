@@ -1,29 +1,20 @@
-﻿Public NotInheritable Class MainPage
+Public NotInheritable Class MainPage
     Inherits Page
     ''CheckpointCommandBar subroutines
-    Private Sub BackButton_Click(sender As Object, e As RoutedEventArgs) Handles BackButton.Click
-        Navi.GoBack()
-    End Sub
-    Private Sub ForwardButton_Click(sender As Object, e As RoutedEventArgs) Handles ForwardButton.Click
-        Navi.GoForward()
-    End Sub
-        Private Sub RefreshButton_Click(sender As Object, e As RoutedEventArgs) Handles RefreshButton.Click
+    Private Sub RefreshButton_Click(sender As Object, e As RoutedEventArgs) Handles RefreshButton.Click
         Navi.Refresh()
+        RefreshButton.Visibility = 1
+        StopButton.Visibility = 0
     End Sub
-    Private Sub StopButton_Click(sender As Object, e As RoutedEventArgs) Handles RefreshButton.Click
-        Navi.Stop()
+    Private Sub StopButton_Click(sender As Object, e As RoutedEventArgs) Handles StopButton.Click
+        Navi.Refresh()
+        RefreshButton.Visibility = 0
+        StopButton.Visibility = 1
     End Sub
-    ''Navi subroutine
-    Private Sub Navi_LoadCompleted(sender As Object, e As NavigationEventArgs) Handles Navi.LoadCompleted
-        If Navi.CanGoBack = True Then
-            BackButton.IsEnabled = True
-        Else
-            BackButton.IsEnabled = False
-        End If
-        If Navi.CanGoForward = True Then
-            ForwardButton.IsEnabled = True
-        Else
-            ForwardButton.IsEnabled = False
-        End If
+    ''Navi subroutines
+    Private Sub Navi_NavigationCompleted(sender As Object, e As WebViewNavigationCompletedEventArgs) Handles Navi.NavigationCompleted
+        RefreshButton.Visibility = 0
+        StopButton.Visibility = 1
+        RefreshButton.IsEnabled = True
     End Sub
 End Class
